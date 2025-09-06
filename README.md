@@ -22,6 +22,6 @@ When a student is added through the form, a **profile card** and a row in the **
 3. Fill in the form and click **Add Student**.  
 
 ## GitHub Repository
-[GitHub Repo Link Here]  
+ https://github.com/RejoiceKaulumah/WAD621S-LAB4.git
 
 
