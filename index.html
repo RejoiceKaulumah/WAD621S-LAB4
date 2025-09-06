@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 4 – Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+        <h1>Student Registration</h1>
+
+        <!-- Registration Form -->
+        <section>
+            <form id="regForm" novalidate>
+                <label for="first">First Name *</label>
+                <input type="text" id="first" name="first" required>
+                <small id="err-first" class="error"></small>
+
+                <label for="last">Last Name *</label>
+                <input type="text" id="last" name="last" required>
+                <small id="err-last" class="error"></small>
+
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" required>
+                <small id="err-email" class="error"></small>
+
+                <label for="prog">Programme *</label>
+                <input type="text" id="prog" name="prog" required>
+                <small id="err-prog" class="error"></small>
+
+                <fieldset>
+                    <legend>Year of Study *</legend>
+                    <label><input type="radio" name="year" value="1" required> 1</label>
+                    <label><input type="radio" name="year" value="2"> 2</label>
+                    <label><input type="radio" name="year" value="3"> 3</label>
+                    <label><input type="radio" name="year" value="4"> 4</label>
+                </fieldset>
+                <small id="err-year" class="error"></small>
+
+                <label for="interests">Interests (comma separated)</label>
+                <input type="text" id="interests" name="interests">
+
+                <label for="photo">Photo URL</label>
+                <input type="url" id="photo" name="photo">
+
+                <div aria-live="polite" id="live"></div>
+                <button type="submit">Add Student</button>
+            </form>
+        </section>
+
+        <!-- Cards Section -->
+        <section>
+            <h2>Profile Cards</h2>
+            <div id="cards"></div>
+        </section>
+
+        <!-- Summary Table -->
+        <section>
+            <h2>Summary</h2>
+            <table id="summary">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Programme</th>
+                        <th>Year</th>
+                        <th>Interests</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </section>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
