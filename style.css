@@ -1,0 +1,182 @@
+/* General page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: #f5f6fa;
+    color: #333;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+section {
+    margin: 30px 0;
+}
+
+    section h2 {
+        border-bottom: 2px solid #3498db;
+        padding-bottom: 5px;
+        margin-bottom: 15px;
+    }
+
+/* Form styling */
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+label {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+input, button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+button {
+    background: #3498db;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background 0.3s ease;
+}
+
+    button:hover {
+        background: #2980b9;
+    }
+
+.error {
+    color: #e74c3c;
+    font-size: 0.85em;
+}
+
+/* Cards section */
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 15px;
+    margin: 20px;
+}
+
+.card-person {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: transform 0.2s;
+}
+
+    .card-person:hover {
+        transform: translateY(-3px);
+    }
+
+.card-info {
+    display: flex;
+    align-items: center;
+}
+
+.card-person img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.card-person h3 {
+    margin: 0;
+    color: #2c3e50;
+}
+
+.card-person p {
+    margin: 5px 0 0 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.badge {
+    background: #3498db;
+    color: #fff;
+    padding: 3px 8px;
+    margin-right: 5px;
+    border-radius: 12px;
+    font-size: 0.75em;
+}
+
+.interest-tag {
+    display: inline-block;
+    background: #ecf0f1;
+    color: #2c3e50;
+    padding: 2px 8px;
+    margin: 2px 2px 0 0;
+    border-radius: 10px;
+    font-size: 0.75em;
+}
+
+/* Remove button inside table and cards */
+.card-person button,
+#summary button {
+    width: auto;
+    padding: 5px 10px;
+    background: #e74c3c;
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+    .card-person button:hover,
+    #summary button:hover {
+        background: #c0392b;
+    }
+
+/* Table section */
+#summary {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+    #summary thead {
+        background: #3498db;
+        color: #fff;
+    }
+
+    #summary th, #summary td {
+        padding: 10px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+
+    #summary tr:nth-child(even) {
+        background: #f9f9f9;
+    }
